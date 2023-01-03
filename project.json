@@ -8,7 +8,10 @@
       "executor": "@nrwl/vite:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
-      "options": { "base": "./", "outputPath": "dist/action-secret" },
+      "options": {
+        "base": "https://faslh.github.io/action-secret/",
+        "outputPath": "dist/action-secret"
+      },
       "configurations": {
         "development": {
           "mode": "development"
