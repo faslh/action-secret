@@ -9,7 +9,6 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "base": "https://faslh.github.io/action-secret/",
         "outputPath": "dist/action-secret"
       },
       "configurations": {
@@ -17,6 +16,7 @@
           "mode": "development"
         },
         "production": {
+          "base": "https://faslh.github.io/action-secret/",
           "mode": "production"
         }
       }
