@@ -7,6 +7,9 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+    - run: npm ci
+      
     - name: Make envfile
       uses: SpicyPizza/create-envfile@v1.3
       with:
