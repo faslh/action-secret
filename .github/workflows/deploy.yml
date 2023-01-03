@@ -14,7 +14,7 @@ jobs:
       uses: ozaytsev86/create-env-file@v1
       with:
         ENV_VITE_HOME: ${{ secrets.SECRET_KEY }}
-        file-name: "$GITHUB_WORKSPACE/.env"
+        file-name: $GITHUB_WORKSPACE/.env
     - run: npx nx run build
     - name: Deploy pages
       uses: crazy-max/ghaction-github-pages@v2
