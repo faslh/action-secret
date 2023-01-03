@@ -13,6 +13,7 @@ jobs:
         envkey_VITE_HOME: ${{ secrets.SECRET_KEY }}
         file_name: .env
         fail_on_empty: true
+    - run: npx nx run build
     - name: Deploy pages
       uses: crazy-max/ghaction-github-pages@v2
       with:
