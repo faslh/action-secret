@@ -1,12 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
 
 export function App() {
   return (
     <>
-      <NxWelcome title="action-secret" />
-      <div />
+      <h1>ENV VAR IS: {(import.meta as any).env.VITE_HOME as any}</h1>
     </>
   );
 }
